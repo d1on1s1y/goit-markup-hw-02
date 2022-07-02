@@ -29,6 +29,9 @@ ul {
   list-style-type: none;
 }
 /* Стили отдельных элементов */
+.header {
+  background-color: var(--main-header-color);
+}
 /*Стили лого*/
 .logo {
   font-family: "Raleway";
@@ -155,11 +158,11 @@ ul {
 .footer {
   background-color: var(--hero-and-footer-color);
 }
-.address {
-  color: var(--main-header-color);
-}
 .address-link {
   color: rgba(255, 255, 255, 0.6);
+}
+.address-link:hover {
+  color: var(--animation-color);
 }
 .address-list {
   font-style: normal;
@@ -167,4 +170,28 @@ ul {
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
+}
+.address {
+  font-size: 14px;
+  line-height: 24px;
+
+  letter-spacing: 0.03em;
+
+  color: #ffffff;
+}
+.portfolio-btn {
+  color: var(--heaer-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  border-radius: 4px;
+  background-color: var(--bg-color);
+  cursor: pointer;
+}
+.portfolio-btn:hover,
+.portfolio-btn-active {
+  background-color: var(--animation-color);
+  color: var(--main-header-color);
 }
